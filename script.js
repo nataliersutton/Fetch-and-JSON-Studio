@@ -1,11 +1,11 @@
 window.addEventListener("load", function() {
-    fetch("https://handlers.education.launchcode.org/static/astronauts.json").then(function(response) {
-        response.json().then(function(json) {
-            // console.log(json);
+    fetch("https://handlers.education.launchcode.org/static/astronauts.json").then( function(response) {
+        response.json().then( function(json) {
             const astronautContainer = document.getElementById("container");
             let astronaut = "";
             for (astronaut of json) {
-            astronaut += `
+            astronaut = 
+            `
             <div class="astronaut">
             <div class="bio">
                <h3>${astronaut.firstName} ${astronaut.lastName}</h3>
